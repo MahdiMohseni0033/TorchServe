@@ -7,6 +7,15 @@ This tutorial explains how to serve PyTorch models with TorchServe.
 - PyTorch  
 - TorchServe
 
+## install requirement 
+```bash
+# Latest release
+pip install torchserve torch-model-archiver torch-workflow-archiver
+
+# install requirement 
+pip install -r requirement.txt
+```
+
 ## Steps 
 
 ### 1. Create model store directory
