@@ -34,13 +34,7 @@ wget https://download.pytorch.org/models/densenet161-8d451a50.pth
 ### 3. Archive model using model archiver
 
 ```bash
-torch-model-archiver --model-name densenet161 \
-    --version 1.0 \
-    --model-file model.py \  
-    --serialized-file densenet161-8d451a50.pth \
-    --export-path model_store/ \  
-    --extra-files index_to_name.json \
-    --handler image_classifier 
+torch-model-archiver --model-name densenet161 --version 1.0 --model-file model.py --serialized-file densenet161-8d451a50.pth --export-path model_store/ --extra-files index_to_name.json --handler image_classifier
  ```
 ### 4. Start TorchServe to serve model
 
